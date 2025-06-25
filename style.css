@@ -1,0 +1,243 @@
+/* 
+     Date: June 25th 2025
+     Author@ Adam Chalkley
+*/
+
+
+.container{
+
+    position: relative;
+}
+
+.nav{
+
+    display: flex;
+    height: 110px;
+    width: 100%;
+    background-color: #FFFFFF;
+    align-items: center;
+    gap: 9%;
+    justify-content: space-around;
+    
+}
+
+
+.portfolio {
+
+   
+    margin: 0;
+    padding: 0;
+    min-height: 60vh;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+
+.portfolio-text{
+
+    
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+h1, h4, h5{
+    
+    color: #fdfdfd;
+    margin: 5px;
+    font-family: sans-serif;
+    text-shadow:
+    -1px -1px 0 #213469,
+    1px -1px 0 #213469,
+    -1px 1px 0 #213469,
+    1px 1px 0 #213469; 
+}
+
+
+ul{
+
+    display: flex;
+    list-style:none;
+    justify-content: space-around;
+    gap: 9px;
+}
+
+li{
+
+    font-family: sans-serif;
+    text-shadow: 2px 2px rgba(197, 197, 197, 0.26), -2px -2px rgba(165, 165, 165, 0.158), 2px -2px rgba(172, 172, 172, 0.116), -2px 2px rgba(255, 255, 255, 0.548);
+    font-size: 1.1em;
+    color: #3252a1;
+}
+
+#nav-but{
+
+    border: 1px solid #3252a1;
+    color: #3252a1;
+    border-radius: 8px 3px;
+    height: 3.2em;
+    font-size: 1.13em;
+    background-color: #bdbdbd0e;
+    padding: 1.12em;
+}
+
+#port-but{
+
+    height: 4.2em;
+    width: 10.2em;
+    background-color: rgba(0, 0, 255, 0.034);
+    border: 1px solid white;
+    border-radius: 14px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+
+#nav-but:hover{
+
+    color: #273f7c;
+    background-color: #2341811f;
+
+}
+
+#port-but:hover{
+
+    background-color: rgba(0, 0, 255, 0.11);
+    color: #dbd29b;
+}
+
+.about-us{
+
+    margin-top: 110px;
+    background: #ffffff;
+    background: linear-gradient(88deg,rgba(255, 255, 255, 1) 50%, rgba(66, 108, 214, 0.205) 71%, rgba(242, 242, 242, 1) 96%);
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    margin-bottom: 120px;
+}
+
+.about-text p{
+    
+    padding: 30px;
+    border: 2px solid rgba(73, 73, 102, 0.623);
+    color: #213469;
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px rgba(20, 88, 175, 0.568);
+    margin-right: 2%;
+}
+
+.about-pic{
+
+    padding-left: 30px;
+    box-shadow: 10px 5px 5px rgba(20, 87, 175, 0.397);
+}
+
+.about-text:hover{
+
+    font-size: 1.05em;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.footer, a{
+
+    color: #3252a1;
+    text-align: center;
+}
+
+.footer{
+
+    border: 2px solid rgba(20, 87, 175, 0.199);
+    
+}
+
+/* Background/overlay of modals */
+.project-list-overlay{
+
+    display: none;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: #00196b88;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-list-cont{
+
+    display: flex;
+    justify-content: center;
+}
+
+.project-list-content table,td,th{
+
+    color: #0a173b;
+    border: 2px solid rgba(4, 39, 90, 0.658);
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 3px;
+    
+}
+
+/* Modal header */
+.proj-list-header{
+
+    display: flex;
+    margin-top: 2%;
+    gap: 30%;
+    justify-content: space-around;
+}
+
+.proj-list-header h5, .temperature-header h5{
+
+    text-align: center;
+    width: 59%;
+    border: 1px solid rgba(97, 119, 168, 0.425);
+}
+
+/* Both Modals */
+.temperature, .project-list-content{
+
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: #d9e3ff;
+}
+
+/* Header for modal */
+.temperature-header{
+
+    display: flex;
+    margin-top: 2%;
+    gap: 10%;
+    justify-content: space-around;
+}
+
+.city-entry {
+    margin-bottom: 10px; /* Adds space between entries */
+    text-align: center;
+  }
+
+#temp{
+
+    font-size: 1.2em;
+    color:rgb(252, 218, 69);
+  }
+
+h5{
+
+    color:rgba(95, 159, 255, 0.952);
+    margin-left: 10%;
+}
+
+
