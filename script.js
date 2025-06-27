@@ -5,7 +5,41 @@
 */
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    
+
+    // clicked the logo
+    // logo will flip 180 degrees when clicked, a variable inside a closure will keep track of the
+    // logos state
+    function logoClicked(){
+
+        var logoUpside = true;
+
+        function inner(){
+
+            if(logoUpside){
+
+                document.getElementById("logo").src = "logo2.jpg";
+                logoUpside = false;
+                console.log("logoUpside");
+                return; 
+            }else{
+
+                logoUpside = true;
+                document.getElementById("logo").src = "logo.jpg";
+            }
+        }
+
+        return inner;
+    }
+
+    var clickedLogo = logoClicked();
+
+    let logo = document.getElementById("logo").addEventListener("click",()=>{
+
+        clickedLogo();
+       
+    });
+
+     // user clicked project button
      let projectsButton = document.getElementById("port-but").addEventListener("click", ()=>{
 
         // hide appropriate elements and make needed elements visible
@@ -34,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
      });
 
-
+     // user clicked the nav button
      document.getElementById("nav-but").addEventListener("click",()=>{
         
         // clear the modal data
