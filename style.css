@@ -241,3 +241,52 @@ h5{
 }
 
 
+@media (max-width: 950px){
+    #about-us{
+        
+       flex-direction: column;
+    }
+
+    #about-pic{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 850px){
+
+    .nav{
+
+        gap: 1%;
+        justify-content: space-around;
+        
+    }
+
+    #nav-but{
+
+       
+        height: 4em;
+        font-size: 0.7em;
+        background-color: #bdbdbd0e;
+        padding: 1.12em;
+    }
+
+    ul{
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    li{
+
+        font-family: sans-serif;
+        text-shadow: 2px 2px rgba(197, 197, 197, 0.26), -2px -2px rgba(165, 165, 165, 0.158), 2px -2px rgba(172, 172, 172, 0.116), -2px 2px rgba(255, 255, 255, 0.548);
+        font-size: 0.7em;
+        color: #3252a1;
+    }
+   
+  }
+  
+
+
